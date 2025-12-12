@@ -61,7 +61,7 @@ export const courses = [
 	{
 		image: "img/courses/image-2.jpg",
 		alt: "Highload Software Architecture",
-		tag: tags[4],
+		tag: tags[5],
 		title: "Highload Software Architecture",
 		price: 600,
 		author: "Brooklyn Simmons",
