@@ -1,0 +1,44 @@
+@forward "header";
+@forward "nav";
+@forward "content";
+
+.course {
+	position: relative;
+
+	&__container {
+		position: relative;
+		z-index: 1;
+		padding: 44px 15px 86px 15px;
+		max-width: 1260px;
+		margin: 0 auto;
+	}
+
+	&__header {
+		margin-bottom: 85px;
+	}
+
+	&__nav {
+		margin-bottom: 60px;
+	}
+
+	&__decorate-dots {
+		position: absolute;
+		top: 50px;
+		right: 0;
+		z-index: 0;
+	}
+
+	&__decorate-circles {
+		position: absolute;
+		top: 36%;
+		left: 56px;
+		z-index: 0;
+	}
+
+	&__decorate-arrows {
+		position: absolute;
+		bottom: 37%;
+		right: 70px;
+		z-index: 0;
+	}
+}

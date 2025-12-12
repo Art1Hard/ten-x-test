@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{ "title":"Courses" })
+
+	<body>
+		<main class="course">
+			<div class="course__container">
+				<section>
+					<header class="course__header course-header">
+						<h1 class="course-header__title">
+							<small class="course-header__subtitle"
+								>Enjoy your studying!</small
+							>
+							Our online courses
+						</h1>
+					</header>
+				</section>
+
+				<section>
+					<nav class="course__nav course-nav">
+						<ul class="course-nav__list"></ul>
+
+						<div class="course-nav__search">
+							<input
+								type="search"
+								class="course-nav__search-input"
+								placeholder="Search course..." />
+
+							@@include('html/svg/search.html',{})
+						</div>
+					</nav>
+				</section>
+
+				<section class="course__content course-content">
+					<ul class="course-content__list"></ul>
+
+					<button class="course-content__more-btn">
+						@@include('html/svg/loading.html',{}) Load more
+					</button>
+				</section>
+			</div>
+
+			@@include('html/svg/dots.html',{}) @@include('html/svg/circles.html',{})
+			@@include('html/svg/arrows.html',{})
+		</main>
+	</body>
+
+	<script src="js/app.min.js"></script>
+</html>

@@ -1,0 +1,21 @@
+@use "../vars";
+
+.course-header {
+	&__title {
+		padding-right: 50px;
+		font-size: vars.$font-size-extra;
+		text-align: center;
+		font-weight: 900;
+		line-height: 130%;
+	}
+
+	&__subtitle {
+		font-size: vars.$font-size-base;
+		font-weight: 700;
+		text-transform: uppercase;
+		display: block;
+		line-height: 150%;
+		letter-spacing: 0.06em;
+		margin-bottom: 8px;
+	}
+}
