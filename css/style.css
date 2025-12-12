@@ -170,10 +170,6 @@ body {
   text-wrap: nowrap;
 }
 
-.course-nav__item:hover {
-  border-color: #9a9ca5;
-}
-
 .course-nav__item--active,
 .course-nav__item--active:hover {
   border-color: #ff3f3a;
@@ -281,11 +277,19 @@ body {
   color: #1e212c;
 }
 
+.course-content__img {
+  overflow: hidden;
+}
+
 .course-content__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .course-content__info {
@@ -393,5 +397,17 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .course-nav__item:hover {
+    border-color: #9a9ca5;
+  }
+
+  .course-content__img:hover img {
+    -webkit-transform: scale(1.075);
+        -ms-transform: scale(1.075);
+            transform: scale(1.075);
   }
 }
